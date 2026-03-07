@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvan Akalin | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-counter">0</div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+        <div class="loader-text">ELVAN AKALIN</div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <canvas id="webgl"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">EA</a>
+        <div class="nav-links">
+            <a href="#about" data-text="Hakkimda">Hakkimda</a>
+            <a href="#work" data-text="Projeler">Projeler</a>
+            <a href="#skills" data-text="Yetenekler">Yetenekler</a>
+            <a href="#contact" data-text="Iletisim">Iletisim</a>
+        </div>
+        <div class="nav-hamburger">
+            <span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" data-speed="0.5">
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="hero-tag-line"></span>
+                <span>Creative Developer & Designer</span>
+            </div>
+            <h1 class="hero-title">
+                <div class="title-row">
+                    <span class="title-word" data-delay="0">Elvan</span>
+                </div>
+                <div class="title-row">
+                    <span class="title-word" data-delay="1">Akalin</span>
+                </div>
+            </h1>
+            <p class="hero-desc">Dijital deneyimler tasarliyor, markalari hayata geciriyorum. Web teknolojileri ile sinematik ve etkileyici siteler olusturuyorum.</p>
+            <div class="hero-scroll">
+                <div class="scroll-line"></div>
+                <span>Kesfet</span>
+            </div>
+        </div>
+        <div class="hero-overlay-text" aria-hidden="true">DEVELOPER</div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-inner">
+            <span>WEB DEVELOPMENT</span><span class="sep">/</span>
+            <span>UI DESIGN</span><span class="sep">/</span>
+            <span>3D EXPERIENCE</span><span class="sep">/</span>
+            <span>CREATIVE CODING</span><span class="sep">/</span>
+            <span>BRANDING</span><span class="sep">/</span>
+            <span>WEB DEVELOPMENT</span><span class="sep">/</span>
+            <span>UI DESIGN</span><span class="sep">/</span>
+            <span>3D EXPERIENCE</span><span class="sep">/</span>
+            <span>CREATIVE CODING</span><span class="sep">/</span>
+            <span>BRANDING</span><span class="sep">/</span>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="about-left">
+                <span class="section-label reveal-text">Hakkimda</span>
+                <h2 class="about-title reveal-text">Kod ile<br><em>sanat</em> yaratiyorum</h2>
+            </div>
+            <div class="about-right">
+                <p class="about-desc reveal-text">Istanbul merkezli bir web gelistirici ve dijital tasarimciyim. Restoran, kafe, e-ticaret ve kurumsal markalar icin ozel web siteleri tasarliyorum.</p>
+                <p class="about-desc reveal-text">Her projeyi benzersiz bir hikaye olarak ele aliyor, modern teknolojiler ve yaratici cozumlerle markalari dijital dunyada one cikariyorum.</p>
+                <div class="about-stats reveal-text">
+                    <div class="about-stat">
+                        <span class="about-stat-num">50+</span>
+                        <span class="about-stat-label">Tamamlanan Proje</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-num">4+</span>
+                        <span class="about-stat-label">Yil Deneyim</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="about-stat-num">30+</span>
+                        <span class="about-stat-label">Mutlu Musteri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="work-header">
+            <span class="section-label reveal-text">Secme Projeler</span>
+            <h2 class="work-title reveal-text">Son <em>Calismalar</em></h2>
+        </div>
+        <div class="work-grid">
+            <div class="work-item reveal-up" data-category="Web Tasarim">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=800&q=80" alt="Kafe Projesi">
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">Incele</span>
+                    </div>
+                </div>
+                <div class="work-item-info">
+                    <h3>Artisan Cafe</h3>
+                    <span>Kafe & Restoran Sitesi</span>
+                </div>
+            </div>
+            <div class="work-item reveal-up" data-category="E-Ticaret">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="E-Ticaret">
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">Incele</span>
+                    </div>
+                </div>
+                <div class="work-item-info">
+                    <h3>Moda Store</h3>
+                    <span>E-Ticaret Platformu</span>
+                </div>
+            </div>
+            <div class="work-item reveal-up" data-category="Kurumsal">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Kurumsal">
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">Incele</span>
+                    </div>
+                </div>
+                <div class="work-item-info">
+                    <h3>Nova Agency</h3>
+                    <span>Kurumsal Web Sitesi</span>
+                </div>
+            </div>
+            <div class="work-item reveal-up" data-category="Blog">
+                <div class="work-item-img">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80" alt="Blog">
+                    <div class="work-item-overlay">
+                        <span class="work-item-view">Incele</span>
+                    </div>
+                </div>
+                <div class="work-item-info">
+                    <h3>Minimal Blog</h3>
+                    <span>Kisisel Blog Platformu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="skills-inner">
+            <div class="skills-header">
+                <span class="section-label reveal-text">Teknolojiler</span>
+                <h2 class="skills-title reveal-text">Kullandigim <em>Araclar</em></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue.js, GSAP, Three.js</p>
+                </div>
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>UI/UX</h3>
+                    <p>Figma, Adobe XD, Photoshop, Illustrator, Responsive Design</p>
+                </div>
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, MongoDB, Firebase, REST API</p>
+                </div>
+                <div class="skill-card reveal-up">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                    </div>
+                    <h3>Deployment</h3>
+                    <p>Git, Vercel, Netlify, Docker, CI/CD, AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <span class="section-label reveal-text">Iletisim</span>
+            <h2 class="contact-title reveal-text">Bir projeniz mi var?<br><em>Konusalim.</em></h2>
+            <p class="contact-desc reveal-text">Yeni projeler, yaratici fikirler veya isbirligi icin her zaman acigim.</p>
+            <div class="contact-links reveal-up">
+                <a href="mailto:elvan@akalin.dev" class="contact-btn">
+                    <span>elvan@akalin.dev</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                </a>
+            </div>
+            <div class="contact-socials reveal-up">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2026 Elvan Akalin</span>
+            <span class="footer-note">Istanbul, Turkiye</span>
+        </div>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
